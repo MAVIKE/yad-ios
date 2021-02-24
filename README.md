@@ -1,2 +1,1 @@
-# yad-ios
-Yet another delivery
+# YAD iOS
