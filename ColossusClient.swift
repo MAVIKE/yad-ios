@@ -8,12 +8,13 @@
 import Foundation
 
 final public class ColossusClient {
-    private static func hello(world: String) -> String {
+    public static func hello(world: String) -> String {
+        print("kek")
         return "Hello \(world)!!!"
     }
     
     private static func bay() -> String {
-        print('kek')
+        print("kek")
         return "Bay, bay!!!"
     }
 }
