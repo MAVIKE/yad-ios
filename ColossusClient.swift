@@ -5,14 +5,14 @@
 //  Created by Антон Тимонин on 29.03.2021.
 //
 
-import Foundation
+import UIKit
 
 final public class ColossusClient {
-    public static func hello(world: String) -> String {
-        return "Hello \(world)"
+    public static func hello() -> String {
+        return "Hello"
     }
     
-    public static func bay() -> String {
-        return "Bay"
+    public static func date() -> String {
+        return "29 Mar 2021"
     }
 }
