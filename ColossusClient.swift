@@ -9,10 +9,12 @@ import Foundation
 
 final public class ColossusClient {
     public static func hello(world: String) -> String {
-        return "Hello \(world)"
+        let print = "Hello \(world)"
+        return print
     }
     
     public static func bay() -> String {
-        return "Bay"
+        let print = "Bay"
+        return print
     }
 }
