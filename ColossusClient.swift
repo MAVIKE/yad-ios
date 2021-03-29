@@ -13,6 +13,7 @@ final public class ColossusClient {
     }
     
     private static func bay() -> String {
+        print('kek')
         return "Bay, bay!!!"
     }
 }
