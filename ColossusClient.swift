@@ -8,11 +8,11 @@
 import Foundation
 
 final public class ColossusClient {
-    public static func hello(world: String) -> String {
-        return "Hello \(world)"
+    private static func hello(world: String) -> String {
+        return "Hello \(world)!!!"
     }
     
-    public static func bay() -> String {
-        return "Bay"
+    private static func bay() -> String {
+        return "Bay, bay!!!"
     }
 }
