@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		58B6FE5C185A356A4B76C6DC /* Pods_YetAnotherDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */; };
+		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
+		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
+		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
+		77E89B3C2619CDE30039C987 /* AssemblyModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B3B2619CDE30039C987 /* AssemblyModules.swift */; };
+		77E89B432619CEF30039C987 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B422619CEF30039C987 /* NetworkService.swift */; };
+		77E89B482619CF2D0039C987 /* RouterModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B472619CF2D0039C987 /* RouterModules.swift */; };
+		77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B642619D5690039C987 /* MenuSelectionCell.swift */; };
+		77E89B682619E4330039C987 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B672619E4330039C987 /* CollectionReusableView.swift */; };
+		77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B6A2619F2EA0039C987 /* UIView.swift */; };
 		C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E32617A11C00BEF029 /* AppDelegate.swift */; };
 		C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E52617A11C00BEF029 /* SceneDelegate.swift */; };
 		C59718E82617A11C00BEF029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E72617A11C00BEF029 /* ViewController.swift */; };
@@ -18,6 +27,15 @@
 /* Begin PBXFileReference section */
 		546B6C7D2C7F29933A14E07B /* Pods-YetAnotherDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.release.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		6B4FDC0C0E1A17BFDFB661B9 /* Pods-YetAnotherDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.debug.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.debug.xcconfig"; sourceTree = "<group>"; };
+		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		77E89B3B2619CDE30039C987 /* AssemblyModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModules.swift; sourceTree = "<group>"; };
+		77E89B422619CEF30039C987 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		77E89B472619CF2D0039C987 /* RouterModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterModules.swift; sourceTree = "<group>"; };
+		77E89B642619D5690039C987 /* MenuSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectionCell.swift; sourceTree = "<group>"; };
+		77E89B672619E4330039C987 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		77E89B6A2619F2EA0039C987 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetAnotherDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59718E02617A11C00BEF029 /* YetAnotherDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59718E32617A11C00BEF029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +64,6 @@
 				6B4FDC0C0E1A17BFDFB661B9 /* Pods-YetAnotherDelivery.debug.xcconfig */,
 				546B6C7D2C7F29933A14E07B /* Pods-YetAnotherDelivery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,66 @@
 				B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77E89B3E2619CDEA0039C987 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B3B2619CDE30039C987 /* AssemblyModules.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		77E89B402619CDF10039C987 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B512619D2B50039C987 /* View */,
+				77E89B532619D2BB0039C987 /* Presenter */,
+				77E89B382619CD2A0039C987 /* HomeProtocols.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		77E89B452619CEF60039C987 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B422619CEF30039C987 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		77E89B4C2619CF810039C987 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B472619CF2D0039C987 /* RouterModules.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		77E89B512619D2B50039C987 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B322619CCD70039C987 /* HomeView.swift */,
+				77E89B642619D5690039C987 /* MenuSelectionCell.swift */,
+				77E89B672619E4330039C987 /* CollectionReusableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77E89B532619D2BB0039C987 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B352619CCE60039C987 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		77E89B6D2619F2ED0039C987 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77E89B6A2619F2EA0039C987 /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C59718D72617A11C00BEF029 = {
@@ -82,6 +159,11 @@
 				C59718E32617A11C00BEF029 /* AppDelegate.swift */,
 				C59718E52617A11C00BEF029 /* SceneDelegate.swift */,
 				C59718E72617A11C00BEF029 /* ViewController.swift */,
+				77E89B6D2619F2ED0039C987 /* Extensions */,
+				77E89B4C2619CF810039C987 /* Router */,
+				77E89B3E2619CDEA0039C987 /* Assembly */,
+				77E89B452619CEF60039C987 /* Services */,
+				77E89B402619CDF10039C987 /* HomeModule */,
 				C59718EC2617A11E00BEF029 /* Assets.xcassets */,
 				C59718EE2617A11E00BEF029 /* LaunchScreen.storyboard */,
 				C59718F12617A11E00BEF029 /* Info.plist */,
@@ -203,7 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
+				77E89B682619E4330039C987 /* CollectionReusableView.swift in Sources */,
+				77E89B3C2619CDE30039C987 /* AssemblyModules.swift in Sources */,
+				77E89B432619CEF30039C987 /* NetworkService.swift in Sources */,
+				77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */,
+				77E89B332619CCD70039C987 /* HomeView.swift in Sources */,
+				77E89B482619CF2D0039C987 /* RouterModules.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
+				77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */,
+				77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */,
+				77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */,
 				C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
