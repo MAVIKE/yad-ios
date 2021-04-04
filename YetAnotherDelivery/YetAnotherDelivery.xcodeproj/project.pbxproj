@@ -15,7 +15,7 @@
 		77E89B432619CEF30039C987 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B422619CEF30039C987 /* NetworkService.swift */; };
 		77E89B482619CF2D0039C987 /* RouterModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B472619CF2D0039C987 /* RouterModules.swift */; };
 		77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B642619D5690039C987 /* MenuSelectionCell.swift */; };
-		77E89B682619E4330039C987 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B672619E4330039C987 /* CollectionReusableView.swift */; };
+		77E89B682619E4330039C987 /* HeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B672619E4330039C987 /* HeaderCollectionCell.swift */; };
 		77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B6A2619F2EA0039C987 /* UIView.swift */; };
 		C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E32617A11C00BEF029 /* AppDelegate.swift */; };
 		C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E52617A11C00BEF029 /* SceneDelegate.swift */; };
@@ -34,7 +34,7 @@
 		77E89B422619CEF30039C987 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		77E89B472619CF2D0039C987 /* RouterModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterModules.swift; sourceTree = "<group>"; };
 		77E89B642619D5690039C987 /* MenuSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectionCell.swift; sourceTree = "<group>"; };
-		77E89B672619E4330039C987 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		77E89B672619E4330039C987 /* HeaderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionCell.swift; sourceTree = "<group>"; };
 		77E89B6A2619F2EA0039C987 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetAnotherDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59718E02617A11C00BEF029 /* YetAnotherDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +114,7 @@
 			children = (
 				77E89B322619CCD70039C987 /* HomeView.swift */,
 				77E89B642619D5690039C987 /* MenuSelectionCell.swift */,
-				77E89B672619E4330039C987 /* CollectionReusableView.swift */,
+				77E89B672619E4330039C987 /* HeaderCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
-				77E89B682619E4330039C987 /* CollectionReusableView.swift in Sources */,
+				77E89B682619E4330039C987 /* HeaderCollectionCell.swift in Sources */,
 				77E89B3C2619CDE30039C987 /* AssemblyModules.swift in Sources */,
 				77E89B432619CEF30039C987 /* NetworkService.swift in Sources */,
 				77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */,

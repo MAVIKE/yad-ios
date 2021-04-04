@@ -37,7 +37,7 @@ class HomeView: UIViewController {
         collectionView.dataSource = self
         
         collectionView.register(MenuSelectionCell.self, forCellWithReuseIdentifier: MenuSelectionCell.identifier)
-        collectionView.register(CollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionReusableView.identifier)
+        collectionView.register(HeaderCollectionCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionCell.identifier)
         
         self.view.addSubview(collectionView)
         layoutCollectionView()
@@ -68,15 +68,15 @@ extension HomeView: UICollectionViewDelegateFlowLayout {
 
 extension HomeView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: CGFloat(CollectionReusableView.height))
+        return CGSize(width: collectionView.frame.width, height: CGFloat(HeaderCollectionCell.height))
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            let reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionReusableView.identifier, for: indexPath) as! CollectionReusableView
+            let reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionCell.identifier, for: indexPath) as! HeaderCollectionCell
             
-            reusableview.frame = CGRect(x: 0 , y: 0, width: Int(view.frame.width), height: CollectionReusableView.height)
+            reusableview.frame = CGRect(x: 0 , y: 0, width: Int(view.frame.width), height: HeaderCollectionCell.height)
             reusableview.setupView()
             return reusableview
         default:

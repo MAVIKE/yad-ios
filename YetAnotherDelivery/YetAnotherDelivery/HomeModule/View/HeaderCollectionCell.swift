@@ -1,7 +1,7 @@
 import UIKit
 
-class CollectionReusableView: UICollectionReusableView {
-    static let identifier = "CollectionReusableView"
+class HeaderCollectionCell: UICollectionReusableView {
+    static let identifier = "HeaderCollectionCell"
     static let height = 75
     
     let label: UILabel = {
