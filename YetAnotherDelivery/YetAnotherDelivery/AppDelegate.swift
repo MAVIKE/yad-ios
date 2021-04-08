@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let router = RouterModules(assembly: assembly, navigation: navigation)
             
             router.initHomeModule()
+            router.detailModule()
             
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.rootViewController = navigation

@@ -1,20 +1,21 @@
 import UIKit
 
-class HeaderCollectionCell: UICollectionReusableView {
-    static let identifier = "HeaderCollectionCell"
+class HeaderCell: UICollectionReusableView {
+    static let identifier = "MenuHeaderCell"
     static let height = 75
     
     let label: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.text = "Популярные рестораны"
+        
         lbl.font = UIFont.boldSystemFont(ofSize: 30)
         lbl.adjustsFontSizeToFitWidth = true
         lbl.textColor = #colorLiteral(red: 0.2549019608, green: 0.05490196078, blue: 0.5098039216, alpha: 1)
         return lbl
     }()
     
-    func setupView() {
+    func setupView(title: String) {
+        label.text = title
         setupLabel()
     }
     

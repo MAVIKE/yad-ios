@@ -30,7 +30,6 @@ class MenuSelectionCell: UICollectionViewCell {
     }
     
     private func setupView() {
-        backgroundColor = .green
         layer.cornerRadius = 18
         layer.masksToBounds = false
         layer.shadowOffset = CGSize(width: 0, height: 2)

@@ -5,6 +5,7 @@ protocol RouterModulesProtocol {
          navigation: UINavigationController)
     func initHomeModule()
     func detailModule()
+    func dishModule()
     func popToRoot()
     func pop()
 }
@@ -26,6 +27,11 @@ class RouterModules: RouterModulesProtocol {
     
     func detailModule() {
         let module = assembly.menuModule(router: self)
+        navigation.pushViewController(module, animated: true)
+    }
+    
+    func dishModule() {
+        let module = assembly.dishModule(router: self)
         navigation.pushViewController(module, animated: true)
     }
     
