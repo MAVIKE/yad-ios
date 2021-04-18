@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		58B6FE5C185A356A4B76C6DC /* Pods_YetAnotherDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */; };
+		77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */; };
+		77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */; };
 		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
 		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
 		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
@@ -20,7 +22,6 @@
 		77F388EE261A1D7E00975226 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388ED261A1D7E00975226 /* MenuPresenter.swift */; };
 		77F388F1261A1D8D00975226 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388F0261A1D8D00975226 /* MenuView.swift */; };
 		77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388F3261A1D9B00975226 /* MenuProtocols.swift */; };
-		77F38900261A231500975226 /* TypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388FF261A231500975226 /* TypeDishCell.swift */; };
 		77F38903261A232300975226 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38902261A232300975226 /* DishCell.swift */; };
 		77F38906261A586600975226 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38905261A586600975226 /* UILabel.swift */; };
 		C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E32617A11C00BEF029 /* AppDelegate.swift */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		546B6C7D2C7F29933A14E07B /* Pods-YetAnotherDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.release.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		6B4FDC0C0E1A17BFDFB661B9 /* Pods-YetAnotherDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.debug.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.debug.xcconfig"; sourceTree = "<group>"; };
+		77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDishCell.swift; sourceTree = "<group>"; };
+		77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeDishCell.swift; sourceTree = "<group>"; };
 		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
@@ -45,7 +48,6 @@
 		77F388ED261A1D7E00975226 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		77F388F0261A1D8D00975226 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		77F388F3261A1D9B00975226 /* MenuProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
-		77F388FF261A231500975226 /* TypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDishCell.swift; sourceTree = "<group>"; };
 		77F38902261A232300975226 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
 		77F38905261A586600975226 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetAnotherDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,8 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				77F388F0261A1D8D00975226 /* MenuView.swift */,
-				77F388FF261A231500975226 /* TypeDishCell.swift */,
 				77F38902261A232300975226 /* DishCell.swift */,
+				77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */,
+				77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,15 +338,16 @@
 				77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */,
 				77E89B332619CCD70039C987 /* HomeView.swift in Sources */,
 				77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */,
-				77F38900261A231500975226 /* TypeDishCell.swift in Sources */,
 				77E89B482619CF2D0039C987 /* RouterModules.swift in Sources */,
 				77F388F1261A1D8D00975226 /* MenuView.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
 				77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */,
 				77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */,
+				77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */,
 				77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */,
 				77F388EE261A1D7E00975226 /* MenuPresenter.swift in Sources */,
 				C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */,
+				77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

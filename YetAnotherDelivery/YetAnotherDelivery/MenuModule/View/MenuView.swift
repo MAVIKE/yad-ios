@@ -1,10 +1,24 @@
 import UIKit
 
 class MenuView: UIViewController {
-    lazy var TypeDishCellSize = CGSize(width: self.view.frame.width, height: 80)
+    lazy var PrototypeDishCellSize = CGSize(width: self.view.frame.width, height: 76)
     lazy var DishCellSize = CGSize(width: self.view.frame.width - 36, height: 120)
+    lazy var TypeDishCellSize = CGSize(width: 120, height: 76)
     
     var presenter: MenuOutputProtocol!
+    
+    let typeDishesCollectionView: UICollectionView = {
+        // Layout
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 25
+        
+        // CollectionView
+        let cw = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cw.backgroundColor = .white
+        cw.translatesAutoresizingMaskIntoConstraints = false
+        return cw
+    }()
     
     let mainCollectionView: UICollectionView = {
         // Layout
@@ -41,9 +55,11 @@ class MenuView: UIViewController {
         mainCollectionView.delegate = self
         mainCollectionView.dataSource = self
         
-        mainCollectionView.register(TypeDishCell.self, forCellWithReuseIdentifier: TypeDishCell.identifier)
+        mainCollectionView.register(PrototypeDishCell.self, forCellWithReuseIdentifier: PrototypeDishCell.identifier)
         mainCollectionView.register(DishCell.self, forCellWithReuseIdentifier: DishCell.identifier)
         mainCollectionView.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCell.identifier)
+        
+        typeDishesCollectionView.register(TypeDishCell.self, forCellWithReuseIdentifier: TypeDishCell.identifier)
         
         self.view.addSubview(mainCollectionView)
         layoutCollectionView()
@@ -66,14 +82,16 @@ extension MenuView: UICollectionViewDelegateFlowLayout {
         if collectionView == self.mainCollectionView {
             switch indexPath.section {
             case 0:
-                return TypeDishCellSize
+                return PrototypeDishCellSize
             case 1:
                 return DishCellSize
             default:
-                return CGSize(width: 100, height: 100)
+                return CGSize(width: 25, height: 25)
             }
+        } else if collectionView == self.typeDishesCollectionView {
+            return TypeDishCellSize
         }
-        return CGSize(width: 0, height: 0)
+        return CGSize(width: 25, height: 25)
     }
 }
 
@@ -86,6 +104,8 @@ extension MenuView: UICollectionViewDelegate {
             default:
                 return CGSize(width: collectionView.frame.width, height: 25)
             }
+        } else if collectionView == self.typeDishesCollectionView {
+            return CGSize(width: 0, height: 0)
         }
         return CGSize(width: 0, height: 0)
     }
@@ -103,6 +123,8 @@ extension MenuView: UICollectionViewDelegate {
             default:
                 fatalError("Unexpected element kind")
             }
+        } else if collectionView == self.typeDishesCollectionView {
+            return UICollectionReusableView()
         }
         return UICollectionReusableView()
     }
@@ -110,6 +132,8 @@ extension MenuView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.mainCollectionView {
             presenter.didDishTapped()
+        } else if collectionView == self.typeDishesCollectionView {
+            print("Type dishes tapped")
         }
     }
 }
@@ -117,7 +141,9 @@ extension MenuView: UICollectionViewDelegate {
 extension MenuView: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         if collectionView == self.mainCollectionView {
-        return 2
+            return 2
+        } else if collectionView == self.typeDishesCollectionView {
+            return 1
         }
         return 0
     }
@@ -132,6 +158,8 @@ extension MenuView: UICollectionViewDataSource {
             default:
                 return 10
             }
+        } else if collectionView == self.typeDishesCollectionView {
+            return 10
         }
         return 0
     }
@@ -140,11 +168,27 @@ extension MenuView: UICollectionViewDataSource {
         if collectionView == self.mainCollectionView  {
             switch indexPath.section {
             case 0:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TypeDishCell.identifier, for: indexPath) as! TypeDishCell
-                cell.backgroundColor = .green
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PrototypeDishCell.identifier, for: indexPath) as! PrototypeDishCell
+                
+                cell.addSubview(typeDishesCollectionView)
+                typeDishesCollectionView.topAnchor.constraint(equalTo: cell.topAnchor, constant: 0).isActive = true
+                typeDishesCollectionView.leftAnchor.constraint(equalTo: cell.leftAnchor, constant: 0).isActive = true
+                typeDishesCollectionView.bottomAnchor.constraint(equalTo: cell.bottomAnchor, constant: 0).isActive = true
+                typeDishesCollectionView.rightAnchor.constraint(equalTo: cell.rightAnchor, constant: 0).isActive = true
+                typeDishesCollectionView.backgroundColor = .blue
                 return cell
             case 1:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishCell.identifier, for: indexPath) as! DishCell
+                cell.setup()
+                return cell
+            default:
+                fatalError("Unexpected element kind")
+            }
+        } else if collectionView == self.typeDishesCollectionView {
+            switch indexPath.section {
+            case 0:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TypeDishCell.identifier, for: indexPath) as! TypeDishCell
+                cell.backgroundColor = .green
                 cell.setup()
                 return cell
             default:

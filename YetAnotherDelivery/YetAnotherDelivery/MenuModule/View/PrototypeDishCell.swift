@@ -1,5 +1,5 @@
 //
-//  TypeDishCell.swift
+//  PrototypeDishCell.swift
 //  YetAnotherDelivery
 //
 //  Created by Антон Тимонин on 18.04.2021.
@@ -7,13 +7,8 @@
 
 import UIKit
 
-class TypeDishCell: UICollectionViewCell {
-    static let identifier = "TypeDishCell"
-    
-    
-    public func setup() {
-        backgroundColor = .systemPink
-    }
+class PrototypeDishCell: UICollectionViewCell {
+    static let identifier = "PrototypeDishCell"
     
     // MARK:- Init
     override init(frame: CGRect) {
