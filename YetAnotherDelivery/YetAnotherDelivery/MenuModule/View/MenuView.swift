@@ -55,11 +55,15 @@ class MenuView: UIViewController {
         mainCollectionView.delegate = self
         mainCollectionView.dataSource = self
         
+        typeDishesCollectionView.delegate = self
+        typeDishesCollectionView.dataSource = self
+        
         mainCollectionView.register(PrototypeDishCell.self, forCellWithReuseIdentifier: PrototypeDishCell.identifier)
         mainCollectionView.register(DishCell.self, forCellWithReuseIdentifier: DishCell.identifier)
         mainCollectionView.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCell.identifier)
         
         typeDishesCollectionView.register(TypeDishCell.self, forCellWithReuseIdentifier: TypeDishCell.identifier)
+        typeDishesCollectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "UICollectionReusableView")
         
         self.view.addSubview(mainCollectionView)
         layoutCollectionView()
@@ -70,6 +74,11 @@ class MenuView: UIViewController {
         mainCollectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
         mainCollectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
         mainCollectionView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
+    }
+    
+    public func updateCollectionViews() {
+        self.mainCollectionView.reloadData()
+        self.typeDishesCollectionView.reloadData()
     }
 }
 
@@ -104,8 +113,6 @@ extension MenuView: UICollectionViewDelegate {
             default:
                 return CGSize(width: collectionView.frame.width, height: 25)
             }
-        } else if collectionView == self.typeDishesCollectionView {
-            return CGSize(width: 0, height: 0)
         }
         return CGSize(width: 0, height: 0)
     }
@@ -123,8 +130,6 @@ extension MenuView: UICollectionViewDelegate {
             default:
                 fatalError("Unexpected element kind")
             }
-        } else if collectionView == self.typeDishesCollectionView {
-            return UICollectionReusableView()
         }
         return UICollectionReusableView()
     }
@@ -175,7 +180,6 @@ extension MenuView: UICollectionViewDataSource {
                 typeDishesCollectionView.leftAnchor.constraint(equalTo: cell.leftAnchor, constant: 0).isActive = true
                 typeDishesCollectionView.bottomAnchor.constraint(equalTo: cell.bottomAnchor, constant: 0).isActive = true
                 typeDishesCollectionView.rightAnchor.constraint(equalTo: cell.rightAnchor, constant: 0).isActive = true
-                typeDishesCollectionView.backgroundColor = .blue
                 return cell
             case 1:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishCell.identifier, for: indexPath) as! DishCell
@@ -185,15 +189,11 @@ extension MenuView: UICollectionViewDataSource {
                 fatalError("Unexpected element kind")
             }
         } else if collectionView == self.typeDishesCollectionView {
-            switch indexPath.section {
-            case 0:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TypeDishCell.identifier, for: indexPath) as! TypeDishCell
-                cell.backgroundColor = .green
-                cell.setup()
-                return cell
-            default:
-                fatalError("Unexpected element kind")
-            }
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TypeDishCell.identifier, for: indexPath) as! TypeDishCell
+            cell.backgroundColor = .green
+            cell.setup()
+            cell.backgroundColor = .black
+            return cell
         }
         return UICollectionViewCell()
     }
