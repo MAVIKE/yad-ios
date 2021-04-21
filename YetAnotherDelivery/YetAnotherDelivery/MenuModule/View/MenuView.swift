@@ -11,12 +11,13 @@ class MenuView: UIViewController {
         // Layout
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 25
+        layout.minimumLineSpacing = 15
         
         // CollectionView
         let cw = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cw.backgroundColor = .white
         cw.translatesAutoresizingMaskIntoConstraints = false
+        cw.showsHorizontalScrollIndicator = false
         return cw
     }()
     
@@ -30,6 +31,7 @@ class MenuView: UIViewController {
         let cw = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cw.backgroundColor = .white
         cw.translatesAutoresizingMaskIntoConstraints = false
+        cw.showsVerticalScrollIndicator = false
         return cw
     }()
     
@@ -105,6 +107,13 @@ extension MenuView: UICollectionViewDelegateFlowLayout {
 }
 
 extension MenuView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if collectionView == self.typeDishesCollectionView {
+            return UIEdgeInsets(top: 0.0, left: 17.5, bottom: 0.0, right: 0.0)
+        }
+        return UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if collectionView == self.mainCollectionView {
             switch section {
@@ -164,7 +173,7 @@ extension MenuView: UICollectionViewDataSource {
                 return 10
             }
         } else if collectionView == self.typeDishesCollectionView {
-            return 10
+            return presenter.getTypeDishes().count
         }
         return 0
     }
@@ -190,9 +199,8 @@ extension MenuView: UICollectionViewDataSource {
             }
         } else if collectionView == self.typeDishesCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TypeDishCell.identifier, for: indexPath) as! TypeDishCell
-            cell.backgroundColor = .green
-            cell.setup()
-            cell.backgroundColor = .black
+            let item = presenter.getTypeDishes()[indexPath.item]
+            cell.setup(typeDish: item)
             return cell
         }
         return UICollectionViewCell()
