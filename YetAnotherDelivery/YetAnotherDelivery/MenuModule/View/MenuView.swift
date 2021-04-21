@@ -145,7 +145,7 @@ extension MenuView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.mainCollectionView {
-            presenter.didDishTapped()
+            presenter.didDishTapped(dish: presenter.getDishes()[indexPath.item])
         } else if collectionView == self.typeDishesCollectionView {
             print("Type dishes tapped")
         }
@@ -168,9 +168,9 @@ extension MenuView: UICollectionViewDataSource {
             case 0:
                 return 1
             case 1:
-                return 10
+                return presenter.getDishes().count
             default:
-                return 10
+                return 0
             }
         } else if collectionView == self.typeDishesCollectionView {
             return presenter.getTypeDishes().count
@@ -192,7 +192,8 @@ extension MenuView: UICollectionViewDataSource {
                 return cell
             case 1:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishCell.identifier, for: indexPath) as! DishCell
-                cell.setup()
+                let item = presenter.getDishes()[indexPath.item]
+                cell.setup(dish: item)
                 return cell
             default:
                 fatalError("Unexpected element kind")

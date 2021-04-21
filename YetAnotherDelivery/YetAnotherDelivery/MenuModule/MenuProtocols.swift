@@ -6,11 +6,7 @@ protocol MenuInputProtocol {
 
 protocol MenuOutputProtocol {
     init(view: MenuInputProtocol, router: RouterModulesProtocol)
-    func didDishTapped()
+    func didDishTapped(dish: Dish)
     func getTypeDishes() -> [TypeDish]
-}
-
-struct TypeDish {
-    var nameType: String
-    var nameImage: String
+    func getDishes() -> [Dish]
 }

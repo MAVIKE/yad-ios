@@ -5,7 +5,7 @@ protocol RouterModulesProtocol {
          navigation: UINavigationController)
     func initHomeModule()
     func detailModule()
-    func dishModule()
+    func dishModule(dish: Dish)
     func popToRoot()
     func pop()
 }
@@ -30,8 +30,8 @@ class RouterModules: RouterModulesProtocol {
         navigation.pushViewController(module, animated: true)
     }
     
-    func dishModule() {
-        let module = assembly.dishModule(router: self)
+    func dishModule(dish: Dish) {
+        let module = assembly.dishModule(dish: dish, router: self)
         navigation.pushViewController(module, animated: true)
     }
     

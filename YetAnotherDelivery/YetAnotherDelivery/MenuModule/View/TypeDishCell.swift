@@ -55,7 +55,7 @@ class TypeDishCell: UICollectionViewCell {
     private func setupImage() {
         addSubview(imageView)
         
-        imageView.image = UIImage(named: typeDish.nameImage)
+        imageView.image = UIImage(named: typeDish.nameImage.rawValue)
         
         imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
         imageView.rightAnchor.constraint(equalTo: rightAnchor, constant: -6).isActive = true

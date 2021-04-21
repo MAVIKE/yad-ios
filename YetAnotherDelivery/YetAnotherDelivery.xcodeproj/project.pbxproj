@@ -10,6 +10,8 @@
 		58B6FE5C185A356A4B76C6DC /* Pods_YetAnotherDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */; };
 		77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */; };
 		77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */; };
+		77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB036E2630B73300A5F529 /* MenuDish.swift */; };
+		77CB03752630BC1D00A5F529 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB03742630BC1D00A5F529 /* Dish.swift */; };
 		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
 		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
 		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
@@ -36,6 +38,8 @@
 		6B4FDC0C0E1A17BFDFB661B9 /* Pods-YetAnotherDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.debug.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.debug.xcconfig"; sourceTree = "<group>"; };
 		77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDishCell.swift; sourceTree = "<group>"; };
 		77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeDishCell.swift; sourceTree = "<group>"; };
+		77CB036E2630B73300A5F529 /* MenuDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDish.swift; sourceTree = "<group>"; };
+		77CB03742630BC1D00A5F529 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 				B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77CB03712630B73700A5F529 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77CB036E2630B73300A5F529 /* MenuDish.swift */,
+				77CB03742630BC1D00A5F529 /* Dish.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77E89B3E2619CDEA0039C987 /* Assembly */ = {
@@ -153,6 +166,7 @@
 		77F388F6261A1DA000975226 /* MenuModule */ = {
 			isa = PBXGroup;
 			children = (
+				77CB03712630B73700A5F529 /* Model */,
 				77F388F8261A1DA900975226 /* View */,
 				77F388FA261A1DAD00975226 /* Presenter */,
 				77F388F3261A1D9B00975226 /* MenuProtocols.swift */,
@@ -338,7 +352,9 @@
 				77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */,
 				77E89B332619CCD70039C987 /* HomeView.swift in Sources */,
 				77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */,
+				77CB03752630BC1D00A5F529 /* Dish.swift in Sources */,
 				77E89B482619CF2D0039C987 /* RouterModules.swift in Sources */,
+				77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */,
 				77F388F1261A1D8D00975226 /* MenuView.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
 				77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */,

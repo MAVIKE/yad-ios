@@ -3,7 +3,7 @@ import UIKit
 protocol AssemblyModulesProtocol {
     func homeModule(router: RouterModulesProtocol) -> UIViewController
     func menuModule(router: RouterModulesProtocol) -> UIViewController
-    func dishModule(router: RouterModulesProtocol) -> UIViewController
+    func dishModule(dish: Dish, router: RouterModulesProtocol) -> UIViewController
 }
 
 class AssemblyModules: AssemblyModulesProtocol {
@@ -24,7 +24,8 @@ class AssemblyModules: AssemblyModulesProtocol {
         return view
     }
     
-    func dishModule(router: RouterModulesProtocol) -> UIViewController {
+    func dishModule(dish: Dish, router: RouterModulesProtocol) -> UIViewController {
+        print(dish)
         let view = UIViewController()
         view.view.backgroundColor = .systemPink
         return view
