@@ -15,6 +15,7 @@
 		77E5E98A26317C9700CB4914 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E98926317C9700CB4914 /* DishView.swift */; };
 		77E5E98E26317CA500CB4914 /* DishPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E98D26317CA500CB4914 /* DishPresenter.swift */; };
 		77E5E99126317CB200CB4914 /* DishProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E99026317CB200CB4914 /* DishProtocols.swift */; };
+		77E5E99C263204D100CB4914 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E99B263204D100CB4914 /* OrderCell.swift */; };
 		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
 		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
 		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
@@ -46,6 +47,7 @@
 		77E5E98926317C9700CB4914 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
 		77E5E98D26317CA500CB4914 /* DishPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPresenter.swift; sourceTree = "<group>"; };
 		77E5E99026317CB200CB4914 /* DishProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishProtocols.swift; sourceTree = "<group>"; };
+		77E5E99B263204D100CB4914 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				77F38902261A232300975226 /* DishCell.swift */,
 				77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */,
 				77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */,
+				77E5E99B263204D100CB4914 /* OrderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				77E89B332619CCD70039C987 /* HomeView.swift in Sources */,
 				77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */,
 				77CB03752630BC1D00A5F529 /* Dish.swift in Sources */,
+				77E5E99C263204D100CB4914 /* OrderCell.swift in Sources */,
 				77E89B482619CF2D0039C987 /* RouterModules.swift in Sources */,
 				77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */,
 				77F388F1261A1D8D00975226 /* MenuView.swift in Sources */,

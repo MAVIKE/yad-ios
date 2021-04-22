@@ -4,6 +4,8 @@ class MenuPresenter: MenuOutputProtocol {
     let view: MenuInputProtocol!
     let router: RouterModulesProtocol!
     
+    var countDishes = 0
+    
     let typeDishes = [
         TypeDish(nameType: "Burger", nameImage: .burger),
         TypeDish(nameType: "Pizza", nameImage: .pizza),
@@ -40,5 +42,13 @@ class MenuPresenter: MenuOutputProtocol {
     
     func getDishes() -> [Dish] {
         return self.dishes
+    }
+    
+    func getCountDishes() -> Int {
+        return self.countDishes
+    }
+    
+    func plus() {
+        self.countDishes += 2
     }
 }

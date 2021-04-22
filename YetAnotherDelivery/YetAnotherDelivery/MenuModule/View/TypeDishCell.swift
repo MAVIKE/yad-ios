@@ -41,6 +41,11 @@ class TypeDishCell: UICollectionViewCell {
     private func setupLayout() {
         self.layer.cornerRadius = 18
         self.backgroundColor = #colorLiteral(red: 0.7835444808, green: 0.06174802035, blue: 0.4786840081, alpha: 1)
+        layer.cornerRadius = 18
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowRadius = 4
+        layer.shadowOpacity = 0.25
     }
     
     private func setupTitle() {

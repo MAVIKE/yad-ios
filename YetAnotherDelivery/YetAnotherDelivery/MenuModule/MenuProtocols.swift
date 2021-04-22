@@ -9,4 +9,6 @@ protocol MenuOutputProtocol {
     func didDishTapped(dish: Dish)
     func getTypeDishes() -> [TypeDish]
     func getDishes() -> [Dish]
+    func getCountDishes() -> Int
+    func plus()
 }

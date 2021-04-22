@@ -3,6 +3,7 @@ import UIKit
 class MenuView: UIViewController {
     lazy var PrototypeDishCellSize = CGSize(width: self.view.frame.width, height: 76)
     lazy var DishCellSize = CGSize(width: self.view.frame.width - 36, height: 120)
+    lazy var OrderCellSize = CGSize(width: self.view.frame.width - 36, height: 65)
     lazy var TypeDishCellSize = CGSize(width: 120, height: 76)
     
     var presenter: MenuOutputProtocol!
@@ -39,6 +40,18 @@ class MenuView: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setup()
+        
+//        let indexPath = IndexPath(item: 1, section: 0)
+//        mainCollectionView.reloadItems(at: [indexPath])
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            self.presenter.plus()
+            self.mainCollectionView.reloadItems(at: [IndexPath(item: 0, section: 1)])
+        }
     }
     
     private func setup() {
@@ -62,6 +75,7 @@ class MenuView: UIViewController {
         
         mainCollectionView.register(PrototypeDishCell.self, forCellWithReuseIdentifier: PrototypeDishCell.identifier)
         mainCollectionView.register(DishCell.self, forCellWithReuseIdentifier: DishCell.identifier)
+        mainCollectionView.register(OrderCell.self, forCellWithReuseIdentifier: OrderCell.identifier)
         mainCollectionView.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCell.identifier)
         
         typeDishesCollectionView.register(TypeDishCell.self, forCellWithReuseIdentifier: TypeDishCell.identifier)
@@ -95,6 +109,8 @@ extension MenuView: UICollectionViewDelegateFlowLayout {
             case 0:
                 return PrototypeDishCellSize
             case 1:
+                return OrderCellSize
+            case 2:
                 return DishCellSize
             default:
                 return CGSize(width: 25, height: 25)
@@ -145,7 +161,15 @@ extension MenuView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.mainCollectionView {
-            presenter.didDishTapped(dish: presenter.getDishes()[indexPath.item])
+            switch indexPath.section {
+            case 1:
+                print("1")
+            case 2:
+                presenter.didDishTapped(dish: presenter.getDishes()[indexPath.item])
+            default:
+                print("Default tap")
+            }
+            
         } else if collectionView == self.typeDishesCollectionView {
             print("Type dishes tapped")
         }
@@ -155,7 +179,7 @@ extension MenuView: UICollectionViewDelegate {
 extension MenuView: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         if collectionView == self.mainCollectionView {
-            return 2
+            return 3
         } else if collectionView == self.typeDishesCollectionView {
             return 1
         }
@@ -168,6 +192,8 @@ extension MenuView: UICollectionViewDataSource {
             case 0:
                 return 1
             case 1:
+                return 1
+            case 2:
                 return presenter.getDishes().count
             default:
                 return 0
@@ -191,9 +217,14 @@ extension MenuView: UICollectionViewDataSource {
                 typeDishesCollectionView.rightAnchor.constraint(equalTo: cell.rightAnchor, constant: 0).isActive = true
                 return cell
             case 1:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OrderCell.identifier, for: indexPath) as! OrderCell
+                cell.setup(count: presenter.getCountDishes())
+                return cell
+            case 2:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishCell.identifier, for: indexPath) as! DishCell
                 let item = presenter.getDishes()[indexPath.item]
                 cell.setup(dish: item)
+                
                 return cell
             default:
                 fatalError("Unexpected element kind")
