@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let assembly = AssemblyModules()
             let router = RouterModules(assembly: assembly, navigation: navigation)
             if let testDataImg = UIImage(named: "menu")?.pngData() {
-                let testImg =  UIImage(data: testDataImg, scale: 11.75)
-                let testBarItem = UITabBarItem(title: "", image: testImg, selectedImage: nil)
+                let testImg =  UIImage(data: testDataImg, scale: 14.75)
+                let testBarItem = UITabBarItem(title: "Меню", image: testImg, selectedImage: nil)
                 navigation.tabBarItem = testBarItem
             }
             router.initHomeModule()
@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let busket = UIViewController()
             busket.view.backgroundColor = .yellow
             if let testDataImg = UIImage(named: "busket")?.pngData() {
-                let testImg =  UIImage(data: testDataImg, scale: 11.25)
-                let testBarItem = UITabBarItem(title: "", image: testImg, selectedImage: nil)
+                let testImg =  UIImage(data: testDataImg, scale: 14.25)
+                let testBarItem = UITabBarItem(title: "Корзина", image: testImg, selectedImage: nil)
                 busket.tabBarItem = testBarItem
             }
             
@@ -39,8 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let profile = UIViewController()
             profile.view.backgroundColor = .green
             if let testDataImg = UIImage(named: "profile")?.pngData() {
-                let testImg =  UIImage(data: testDataImg, scale: 12.25)
-                let testBarItem = UITabBarItem(title: "", image: testImg, selectedImage: nil)
+                let testImg =  UIImage(data: testDataImg, scale: 15.25)
+                let testBarItem = UITabBarItem(title: "Профиль", image: testImg, selectedImage: nil)
                 profile.tabBarItem = testBarItem
             }
             
