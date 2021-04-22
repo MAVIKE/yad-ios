@@ -26,7 +26,6 @@ class DishView: UIViewController {
     let orderButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Заказать", for: .normal)
         btn.setTitleColor(.white, for: .normal)
         btn.setTitleColor(#colorLiteral(red: 0.8304319978, green: 0.8244299293, blue: 0.8350281119, alpha: 1), for: .highlighted)
         btn.layer.cornerRadius = 12
@@ -47,8 +46,7 @@ class DishView: UIViewController {
     }
     
     private func setupLayout() {
-        self.view.backgroundColor = .white
-    }
+        self.view.backgroundColor = .white    }
     
     private func setupImage() {
         view.addSubview(imageView)
@@ -79,6 +77,7 @@ class DishView: UIViewController {
     private func setupButton() {
         view.addSubview(orderButton)
         
+        orderButton.setTitle("Заказать ₽ \(presenter.getDish().price)", for: .normal)
         orderButton.addTarget(self, action: #selector(orderButtonTapped(sender:)), for: .touchUpInside)
         
         orderButton.topAnchor.constraint(equalTo: mainLabel.bottomAnchor, constant: 4).isActive = true

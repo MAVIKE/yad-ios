@@ -115,7 +115,7 @@ class DishCell: UICollectionViewCell {
     private func setupPriceLabel() {
         addSubview(priceLabel)
 
-        priceLabel.text = "$ \(self.dish.price)"
+        priceLabel.text = "₽ \(self.dish.price)"
         priceLabel.sizeToFit()
 
         priceLabel.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0).isActive = true
@@ -127,12 +127,12 @@ class DishCell: UICollectionViewCell {
     private func setupOrderButton() {
         addSubview(orderButton)
         
-        orderButton.setTitle("Order", for: .normal)
+        orderButton.setTitle("Заказать", for: .normal)
         
         orderButton.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0).isActive = true
         orderButton.rightAnchor.constraint(equalTo: mainLabel.rightAnchor, constant: -10).isActive = true
         orderButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        orderButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        orderButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
     }
     
     // MARK:- Init
