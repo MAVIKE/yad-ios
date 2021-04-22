@@ -14,21 +14,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             
+            // MARK:- Menu Module
             let navigation = UINavigationController()
             let assembly = AssemblyModules()
             let router = RouterModules(assembly: assembly, navigation: navigation)
             if let testDataImg = UIImage(named: "menu")?.pngData() {
-                let testImg =  UIImage(data: testDataImg, scale: 6.7)
+                let testImg =  UIImage(data: testDataImg, scale: 11.75)
                 let testBarItem = UITabBarItem(title: "", image: testImg, selectedImage: nil)
                 navigation.tabBarItem = testBarItem
             }
             router.initHomeModule()
             router.detailModule()
             
+            // MARK:- Busket Module
+            let busket = UIViewController()
+            busket.view.backgroundColor = .yellow
+            if let testDataImg = UIImage(named: "busket")?.pngData() {
+                let testImg =  UIImage(data: testDataImg, scale: 11.25)
+                let testBarItem = UITabBarItem(title: "", image: testImg, selectedImage: nil)
+                busket.tabBarItem = testBarItem
+            }
+            
+            // MARK:- Profile Module
+            let profile = UIViewController()
+            profile.view.backgroundColor = .green
+            if let testDataImg = UIImage(named: "profile")?.pngData() {
+                let testImg =  UIImage(data: testDataImg, scale: 12.25)
+                let testBarItem = UITabBarItem(title: "", image: testImg, selectedImage: nil)
+                profile.tabBarItem = testBarItem
+            }
+            
             window = UIWindow(frame: UIScreen.main.bounds)
             
             let tabBar = UITabBarController()
-            tabBar.setViewControllers([navigation], animated: true)
+            tabBar.setViewControllers([navigation, busket, profile], animated: true)
             tabBar.selectedViewController = navigation
             window?.rootViewController = tabBar
             window?.makeKeyAndVisible()
