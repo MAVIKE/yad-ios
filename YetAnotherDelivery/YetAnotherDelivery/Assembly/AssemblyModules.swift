@@ -25,9 +25,9 @@ class AssemblyModules: AssemblyModulesProtocol {
     }
     
     func dishModule(dish: Dish, router: RouterModulesProtocol) -> UIViewController {
-        print(dish)
-        let view = UIViewController()
-        view.view.backgroundColor = .systemPink
+        let view = DishView()
+        let presenter = DishPresenter(view: view, dish: dish, router: router)
+        view.presenter = presenter
         return view
     }
 }

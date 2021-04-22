@@ -12,6 +12,9 @@
 		77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */; };
 		77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB036E2630B73300A5F529 /* MenuDish.swift */; };
 		77CB03752630BC1D00A5F529 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB03742630BC1D00A5F529 /* Dish.swift */; };
+		77E5E98A26317C9700CB4914 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E98926317C9700CB4914 /* DishView.swift */; };
+		77E5E98E26317CA500CB4914 /* DishPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E98D26317CA500CB4914 /* DishPresenter.swift */; };
+		77E5E99126317CB200CB4914 /* DishProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E99026317CB200CB4914 /* DishProtocols.swift */; };
 		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
 		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
 		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
@@ -40,6 +43,9 @@
 		77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeDishCell.swift; sourceTree = "<group>"; };
 		77CB036E2630B73300A5F529 /* MenuDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDish.swift; sourceTree = "<group>"; };
 		77CB03742630BC1D00A5F529 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		77E5E98926317C9700CB4914 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
+		77E5E98D26317CA500CB4914 /* DishPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPresenter.swift; sourceTree = "<group>"; };
+		77E5E99026317CB200CB4914 /* DishProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishProtocols.swift; sourceTree = "<group>"; };
 		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
@@ -100,6 +106,32 @@
 				77CB03742630BC1D00A5F529 /* Dish.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		77E5E99426317CB900CB4914 /* DishModule */ = {
+			isa = PBXGroup;
+			children = (
+				77E5E99626317CDE00CB4914 /* View */,
+				77E5E99826317CE500CB4914 /* Presenter */,
+				77E5E99026317CB200CB4914 /* DishProtocols.swift */,
+			);
+			path = DishModule;
+			sourceTree = "<group>";
+		};
+		77E5E99626317CDE00CB4914 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77E5E98926317C9700CB4914 /* DishView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77E5E99826317CE500CB4914 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77E5E98D26317CA500CB4914 /* DishPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		77E89B3E2619CDEA0039C987 /* Assembly */ = {
@@ -223,6 +255,7 @@
 				77E89B452619CEF60039C987 /* Services */,
 				77E89B402619CDF10039C987 /* HomeModule */,
 				77F388F6261A1DA000975226 /* MenuModule */,
+				77E5E99426317CB900CB4914 /* DishModule */,
 				C59718EC2617A11E00BEF029 /* Assets.xcassets */,
 				C59718EE2617A11E00BEF029 /* LaunchScreen.storyboard */,
 				C59718F12617A11E00BEF029 /* Info.plist */,
@@ -344,7 +377,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F38903261A232300975226 /* DishCell.swift in Sources */,
+				77E5E98E26317CA500CB4914 /* DishPresenter.swift in Sources */,
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
+				77E5E99126317CB200CB4914 /* DishProtocols.swift in Sources */,
 				77E89B682619E4330039C987 /* HeaderCell.swift in Sources */,
 				77E89B3C2619CDE30039C987 /* AssemblyModules.swift in Sources */,
 				77F38906261A586600975226 /* UILabel.swift in Sources */,
@@ -357,6 +392,7 @@
 				77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */,
 				77F388F1261A1D8D00975226 /* MenuView.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
+				77E5E98A26317C9700CB4914 /* DishView.swift in Sources */,
 				77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */,
 				77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */,
 				77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */,

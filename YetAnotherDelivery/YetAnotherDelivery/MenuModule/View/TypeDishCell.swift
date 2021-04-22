@@ -40,7 +40,7 @@ class TypeDishCell: UICollectionViewCell {
     
     private func setupLayout() {
         self.layer.cornerRadius = 18
-        self.backgroundColor = #colorLiteral(red: 0.7137254902, green: 0.05882352941, blue: 0.4274509804, alpha: 1)
+        self.backgroundColor = #colorLiteral(red: 0.7835444808, green: 0.06174802035, blue: 0.4786840081, alpha: 1)
     }
     
     private func setupTitle() {
