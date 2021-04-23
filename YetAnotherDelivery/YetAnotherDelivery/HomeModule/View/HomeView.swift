@@ -13,6 +13,7 @@ class HomeView: UIViewController {
         
         // CollectionView
         let cw = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cw.showsVerticalScrollIndicator = false
         cw.backgroundColor = .white
         cw.translatesAutoresizingMaskIntoConstraints = false
         return cw

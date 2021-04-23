@@ -1,16 +1,28 @@
 PODS:
   - Alamofire (5.2.2)
+  - Kingfisher (6.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
 
+EXTERNAL SOURCES:
+  Kingfisher:
+    :git: https://github.com/onevcat/Kingfisher
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: 44450a8f564d7c0165f736ba2250649ff8d3e556
+    :git: https://github.com/onevcat/Kingfisher
+
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
 
-PODFILE CHECKSUM: 96dbd269eabee1fd89130ca3310c1cda86790a7a
+PODFILE CHECKSUM: 803cc4f04ec642b1d008d3cc939cd40b60f4af5c
 
 COCOAPODS: 1.9.3

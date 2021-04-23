@@ -1,7 +1,11 @@
 import UIKit
+import Kingfisher
 
 class DishCell: UICollectionViewCell {
     static let identifier = "DishCell"
+    
+    private var dish: Dish!
+    public var delegate: MenuViewDelegate!
     
     let imageView: UIImageView = {
         let iv = UIImageView()
@@ -48,7 +52,9 @@ class DishCell: UICollectionViewCell {
         return btn
     }()
     
-    public func setup() {
+    public func setup(dish: Dish) {
+        self.dish = dish
+            
         setupView()
         setupImageView()
         setupMainLabel()
@@ -69,7 +75,11 @@ class DishCell: UICollectionViewCell {
     private func setupImageView() {
         addSubview(imageView)
         
-        imageView.image = UIImage(named: "kroshka")
+        if let url = URL(string: self.dish.imageUrlStr) {
+            imageView.kf.setImage(with: url)
+        } else {
+            imageView.image = UIImage(named: "404")
+        }
         
         imageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 90).isActive = true
@@ -80,7 +90,7 @@ class DishCell: UICollectionViewCell {
     private func setupMainLabel() {
         addSubview(mainLabel)
         
-        mainLabel.text = "Smoking beef"
+        mainLabel.text = self.dish.title
         mainLabel.addCharacterSpacing(kernValue: 1.5)
         
         mainLabel.topAnchor.constraint(equalTo: imageView.topAnchor, constant: 0).isActive = true
@@ -92,7 +102,7 @@ class DishCell: UICollectionViewCell {
     private func setupDetailLabel() {
         addSubview(detailLabel)
         
-        detailLabel.text = "Traditional Ukranian Bludo very taste"
+        detailLabel.text = self.dish.description
         detailLabel.sizeToFit()
         detailLabel.addCharacterSpacing(kernValue: 0.75)
         detailLabel.setLineSpacing(lineSpacing: 4)
@@ -100,12 +110,13 @@ class DishCell: UICollectionViewCell {
         detailLabel.topAnchor.constraint(equalTo: mainLabel.bottomAnchor, constant: 0).isActive = true
         detailLabel.leftAnchor.constraint(equalTo: mainLabel.leftAnchor, constant: 0).isActive = true
         detailLabel.rightAnchor.constraint(equalTo: mainLabel.rightAnchor, constant: 0).isActive = true
+        detailLabel.bottomAnchor.constraint(equalTo: priceLabel.topAnchor, constant: 0).isActive = true
     }
     
     private func setupPriceLabel() {
         addSubview(priceLabel)
 
-        priceLabel.text = "$ 12.00"
+        priceLabel.text = "₽ \(self.dish.price)"
         priceLabel.sizeToFit()
 
         priceLabel.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0).isActive = true
@@ -117,12 +128,20 @@ class DishCell: UICollectionViewCell {
     private func setupOrderButton() {
         addSubview(orderButton)
         
-        orderButton.setTitle("Order", for: .normal)
+        orderButton.setTitle("Заказать", for: .normal)
+        orderButton.addTarget(self, action: #selector(orderButtonTapped(sender:)), for: .touchUpInside)
         
         orderButton.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0).isActive = true
         orderButton.rightAnchor.constraint(equalTo: mainLabel.rightAnchor, constant: -10).isActive = true
         orderButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        orderButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        orderButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
+    }
+    
+    @objc
+    func orderButtonTapped(sender: Any) {
+        guard let delegate = self.delegate else { return }
+        
+        delegate.updateCount(action: .plus)
     }
     
     // MARK:- Init
