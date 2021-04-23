@@ -14,8 +14,8 @@ class DishView: UIViewController {
         return iv
     }()
     
-    let mainLabel: UILabel = {
-        let lbl = UILabel()
+    let mainLabel: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.boldSystemFont(ofSize: 24)
         lbl.addCharacterSpacing(kernValue: 10)

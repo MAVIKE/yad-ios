@@ -16,8 +16,8 @@ class DishCell: UICollectionViewCell {
         return iv
     }()
     
-    let mainLabel: UILabel = {
-        let lbl = UILabel()
+    let mainLabel: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.boldSystemFont(ofSize: 16)
         lbl.addCharacterSpacing(kernValue: 10)
@@ -25,8 +25,8 @@ class DishCell: UICollectionViewCell {
         return lbl
     }()
     
-    let detailLabel: UILabel = {
-        let lbl = UILabel()
+    let detailLabel: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = lbl.font.withSize(12)
         lbl.numberOfLines = 0
@@ -35,8 +35,8 @@ class DishCell: UICollectionViewCell {
         return lbl
     }()
     
-    let priceLabel: UILabel = {
-        let lbl = UILabel()
+    let priceLabel: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.boldSystemFont(ofSize: 14)
         lbl.textColor = #colorLiteral(red: 0.2549019608, green: 0.05490196078, blue: 0.5098039216, alpha: 1)

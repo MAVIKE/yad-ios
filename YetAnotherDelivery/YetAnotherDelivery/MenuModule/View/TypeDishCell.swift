@@ -21,8 +21,8 @@ class TypeDishCell: UICollectionViewCell {
         return iv
     }()
     
-    let mainLabel: UILabel = {
-        let lbl = UILabel()
+    let mainLabel: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.boldSystemFont(ofSize: 22)
         lbl.addCharacterSpacing(kernValue: 10)

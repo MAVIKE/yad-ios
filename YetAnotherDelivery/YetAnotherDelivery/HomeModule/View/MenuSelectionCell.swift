@@ -3,8 +3,8 @@ import UIKit
 class MenuSelectionCell: UICollectionViewCell {
     static let identifier = "MenuSelectionCell"
     
-    let label: UILabel = {
-        let lbl = UILabel()
+    let label: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.boldSystemFont(ofSize: 26)
         lbl.backgroundColor = .white

@@ -31,7 +31,6 @@ class HomeView: UIViewController {
     }
     
     private func setupNavigation() {
-        navigationController?.view.backgroundColor = .green
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9843137255, green: 0.7333333333, blue: 0, alpha: 1)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.topItem?.title = "Yet Another Delivery"

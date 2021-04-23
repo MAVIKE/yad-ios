@@ -1,6 +1,18 @@
 import UIKit
 
-extension UILabel {
+open class YADLabel: UILabel {
+    required public init() {
+        super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        self.configureView()
+    }
+    
+    private func configureView() {
+    }
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func addCharacterSpacing(kernValue: Double = 3) {
         if let labelText = text, labelText.isEmpty == false {
             let attributedString = NSMutableAttributedString(string: labelText)
