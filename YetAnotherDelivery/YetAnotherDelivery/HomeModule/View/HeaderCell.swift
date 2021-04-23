@@ -4,8 +4,8 @@ class HeaderCell: UICollectionReusableView {
     static let identifier = "MenuHeaderCell"
     static let height = 75
     
-    let label: UILabel = {
-        let lbl = UILabel()
+    let label: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         
         lbl.font = UIFont.boldSystemFont(ofSize: 30)

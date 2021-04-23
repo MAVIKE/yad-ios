@@ -21,7 +21,7 @@
 		77E5E9A72632DA2500CB4914 /* OrderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9A62632DA2500CB4914 /* OrderProtocols.swift */; };
 		77E5E9AA2632DA2E00CB4914 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9A92632DA2E00CB4914 /* OrderPresenter.swift */; };
 		77E5E9AD2632DA3C00CB4914 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9AC2632DA3C00CB4914 /* OrderView.swift */; };
-		77E5E9B72632DC4000CB4914 /* YADNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9B62632DC4000CB4914 /* YADNavigationController.swift */; };
+		77E5E9B72632DC4000CB4914 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9B62632DC4000CB4914 /* UINavigationController.swift */; };
 		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
 		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
 		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
@@ -30,12 +30,12 @@
 		77E89B482619CF2D0039C987 /* RouterHomeModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B472619CF2D0039C987 /* RouterHomeModules.swift */; };
 		77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B642619D5690039C987 /* MenuSelectionCell.swift */; };
 		77E89B682619E4330039C987 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B672619E4330039C987 /* HeaderCell.swift */; };
-		77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B6A2619F2EA0039C987 /* UIView.swift */; };
+		77E89B6B2619F2EA0039C987 /* YADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B6A2619F2EA0039C987 /* YADView.swift */; };
 		77F388EE261A1D7E00975226 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388ED261A1D7E00975226 /* MenuPresenter.swift */; };
 		77F388F1261A1D8D00975226 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388F0261A1D8D00975226 /* MenuView.swift */; };
 		77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388F3261A1D9B00975226 /* MenuProtocols.swift */; };
 		77F38903261A232300975226 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38902261A232300975226 /* DishCell.swift */; };
-		77F38906261A586600975226 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38905261A586600975226 /* UILabel.swift */; };
+		77F38906261A586600975226 /* YADLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38905261A586600975226 /* YADLabel.swift */; };
 		C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E32617A11C00BEF029 /* AppDelegate.swift */; };
 		C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E52617A11C00BEF029 /* SceneDelegate.swift */; };
 		C59718E82617A11C00BEF029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E72617A11C00BEF029 /* ViewController.swift */; };
@@ -59,7 +59,7 @@
 		77E5E9A62632DA2500CB4914 /* OrderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProtocols.swift; sourceTree = "<group>"; };
 		77E5E9A92632DA2E00CB4914 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
 		77E5E9AC2632DA3C00CB4914 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
-		77E5E9B62632DC4000CB4914 /* YADNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YADNavigationController.swift; sourceTree = "<group>"; };
+		77E5E9B62632DC4000CB4914 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
@@ -68,12 +68,12 @@
 		77E89B472619CF2D0039C987 /* RouterHomeModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHomeModules.swift; sourceTree = "<group>"; };
 		77E89B642619D5690039C987 /* MenuSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSelectionCell.swift; sourceTree = "<group>"; };
 		77E89B672619E4330039C987 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		77E89B6A2619F2EA0039C987 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		77E89B6A2619F2EA0039C987 /* YADView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YADView.swift; sourceTree = "<group>"; };
 		77F388ED261A1D7E00975226 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		77F388F0261A1D8D00975226 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		77F388F3261A1D9B00975226 /* MenuProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
 		77F38902261A232300975226 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
-		77F38905261A586600975226 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		77F38905261A586600975226 /* YADLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YADLabel.swift; sourceTree = "<group>"; };
 		B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetAnotherDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59718E02617A11C00BEF029 /* YetAnotherDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59718E32617A11C00BEF029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -231,9 +231,9 @@
 		77E89B6D2619F2ED0039C987 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				77E89B6A2619F2EA0039C987 /* UIView.swift */,
-				77F38905261A586600975226 /* UILabel.swift */,
-				77E5E9B62632DC4000CB4914 /* YADNavigationController.swift */,
+				77E89B6A2619F2EA0039C987 /* YADView.swift */,
+				77F38905261A586600975226 /* YADLabel.swift */,
+				77E5E9B62632DC4000CB4914 /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,10 +428,10 @@
 				77E5E99126317CB200CB4914 /* DishProtocols.swift in Sources */,
 				77E89B682619E4330039C987 /* HeaderCell.swift in Sources */,
 				77E89B3C2619CDE30039C987 /* AssemblyHomeModules.swift in Sources */,
-				77F38906261A586600975226 /* UILabel.swift in Sources */,
+				77F38906261A586600975226 /* YADLabel.swift in Sources */,
 				77E89B432619CEF30039C987 /* NetworkService.swift in Sources */,
 				77E5E9AD2632DA3C00CB4914 /* OrderView.swift in Sources */,
-				77E89B6B2619F2EA0039C987 /* UIView.swift in Sources */,
+				77E89B6B2619F2EA0039C987 /* YADView.swift in Sources */,
 				77E89B332619CCD70039C987 /* HomeView.swift in Sources */,
 				77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */,
 				77CB03752630BC1D00A5F529 /* Dish.swift in Sources */,
@@ -449,7 +449,7 @@
 				77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */,
 				77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */,
 				77F388EE261A1D7E00975226 /* MenuPresenter.swift in Sources */,
-				77E5E9B72632DC4000CB4914 /* YADNavigationController.swift in Sources */,
+				77E5E9B72632DC4000CB4914 /* UINavigationController.swift in Sources */,
 				C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */,
 				77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */,
 			);

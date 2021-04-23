@@ -10,8 +10,8 @@ import UIKit
 class OrderCell: UICollectionViewCell {
     static let identifier = "OrderCell"
     
-    let priceLabel: UILabel = {
-        let lbl = UILabel()
+    let priceLabel: YADLabel = {
+        let lbl = YADLabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.textAlignment = .center
         lbl.font = UIFont.boldSystemFont(ofSize: 24)
