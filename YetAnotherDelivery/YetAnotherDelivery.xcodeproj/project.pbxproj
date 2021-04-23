@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58B6FE5C185A356A4B76C6DC /* Pods_YetAnotherDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */; };
+		77014CAC263371AF0029855F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77014CAB263371AF0029855F /* Location.swift */; };
 		77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */; };
 		77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */; };
 		77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB036E2630B73300A5F529 /* MenuDish.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		546B6C7D2C7F29933A14E07B /* Pods-YetAnotherDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.release.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		6B4FDC0C0E1A17BFDFB661B9 /* Pods-YetAnotherDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetAnotherDelivery.debug.xcconfig"; path = "Target Support Files/Pods-YetAnotherDelivery/Pods-YetAnotherDelivery.debug.xcconfig"; sourceTree = "<group>"; };
+		77014CAB263371AF0029855F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDishCell.swift; sourceTree = "<group>"; };
 		77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeDishCell.swift; sourceTree = "<group>"; };
 		77CB036E2630B73300A5F529 /* MenuDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDish.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				C59718E32617A11C00BEF029 /* AppDelegate.swift */,
 				C59718E52617A11C00BEF029 /* SceneDelegate.swift */,
 				C59718E72617A11C00BEF029 /* ViewController.swift */,
+				77014CAB263371AF0029855F /* Location.swift */,
 				77E89B6D2619F2ED0039C987 /* Extensions */,
 				77E89B4C2619CF810039C987 /* Router */,
 				77E89B3E2619CDEA0039C987 /* Assembly */,
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F38903261A232300975226 /* DishCell.swift in Sources */,
+				77014CAC263371AF0029855F /* Location.swift in Sources */,
 				77E5E98E26317CA500CB4914 /* DishPresenter.swift in Sources */,
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
 				77E5E9A02632D78000CB4914 /* RouterOrderModules.swift in Sources */,

@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             orderRouter.initOrderModule()
             
             // MARK:- Profile Module
-            let profile = UIViewController()
+            let profile = ViewController()
             profile.view.backgroundColor = .green
             if let testDataImg = UIImage(named: "profile")?.pngData() {
                 let testImg =  UIImage(data: testDataImg, scale: 15.25)
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let tabBar = UITabBarController()
             tabBar.setViewControllers([menuNavigation, orderNavigation, profile], animated: true)
-            tabBar.selectedViewController = orderNavigation
+            tabBar.selectedViewController = profile
             window?.rootViewController = tabBar
             window?.makeKeyAndVisible()
 
