@@ -15,25 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             
             // MARK:- Menu Module
-            let navigation = UINavigationController()
-            let assembly = AssemblyModules()
-            let router = RouterModules(assembly: assembly, navigation: navigation)
+            let menuNavigation = UINavigationController()
+            let menuAssembly = AssemblyHomeModules()
+            let menuRouter = RouterHomeModules(assembly: menuAssembly, navigation: menuNavigation)
             if let testDataImg = UIImage(named: "menu")?.pngData() {
                 let testImg =  UIImage(data: testDataImg, scale: 14.75)
                 let testBarItem = UITabBarItem(title: "Меню", image: testImg, selectedImage: nil)
-                navigation.tabBarItem = testBarItem
+                menuNavigation.tabBarItem = testBarItem
             }
-            router.initHomeModule()
-            router.detailModule()
+            menuRouter.initHomeModule()
+            menuRouter.detailModule()
             
-            // MARK:- Busket Module
-            let busket = UIViewController()
-            busket.view.backgroundColor = .yellow
+            // MARK:- Order Module
+            let orderNavigation = UINavigationController()
+            let orderAssembly = AssemblyOrderModules()
+            let orderRouter = RouterOrderModules(assembly: orderAssembly, navigation: orderNavigation)
             if let testDataImg = UIImage(named: "busket")?.pngData() {
                 let testImg =  UIImage(data: testDataImg, scale: 14.25)
                 let testBarItem = UITabBarItem(title: "Корзина", image: testImg, selectedImage: nil)
-                busket.tabBarItem = testBarItem
+                orderNavigation.tabBarItem = testBarItem
             }
+            orderRouter.initOrderModule()
             
             // MARK:- Profile Module
             let profile = UIViewController()
@@ -47,8 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
             
             let tabBar = UITabBarController()
-            tabBar.setViewControllers([navigation, busket, profile], animated: true)
-            tabBar.selectedViewController = navigation
+            tabBar.setViewControllers([menuNavigation, orderNavigation, profile], animated: true)
+            tabBar.selectedViewController = menuNavigation
             window?.rootViewController = tabBar
             window?.makeKeyAndVisible()
 

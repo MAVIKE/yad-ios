@@ -2,7 +2,7 @@ import Foundation
 
 class MenuPresenter: MenuOutputProtocol {
     let view: MenuInputProtocol!
-    let router: RouterModulesProtocol!
+    let router: RouterHomeModulesProtocol!
     
     var countDishes = 0
     
@@ -27,7 +27,7 @@ class MenuPresenter: MenuOutputProtocol {
         Dish(imageUrlStr: "https://eda.yandex/images/1370147/2c9a9c2375da1cf9a822bc25c66f593b-1100x825.jpeg", title: "Картошка", description: "Традиционный печёный картофель, горячие супы, сытные обеды на любой вкус и многое другое вы найдете в Меню сети", price: 12.0)
     ]
     
-    required init(view: MenuInputProtocol, router: RouterModulesProtocol) {
+    required init(view: MenuInputProtocol, router: RouterHomeModulesProtocol) {
         self.view = view
         self.router = router
     }
@@ -48,7 +48,13 @@ class MenuPresenter: MenuOutputProtocol {
         return self.countDishes
     }
     
-    func plus() {
-        self.countDishes += 2
+    func plusCountDish() {
+        self.countDishes += 1
+        view.updateOrders()
+    }
+    
+    func minusCountDish() {
+        self.countDishes -= 1
+        view.updateOrders()
     }
 }

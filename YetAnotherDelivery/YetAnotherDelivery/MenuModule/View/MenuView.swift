@@ -1,5 +1,14 @@
 import UIKit
 
+enum ActionType {
+    case plus
+    case minus
+}
+
+protocol MenuViewDelegate {
+    func updateCount(action: ActionType)
+}
+
 class MenuView: UIViewController {
     lazy var PrototypeDishCellSize = CGSize(width: self.view.frame.width, height: 76)
     lazy var DishCellSize = CGSize(width: self.view.frame.width - 36, height: 120)
@@ -40,18 +49,10 @@ class MenuView: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setup()
-        
-//        let indexPath = IndexPath(item: 1, section: 0)
-//        mainCollectionView.reloadItems(at: [indexPath])
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
-            self.presenter.plus()
-            self.mainCollectionView.reloadItems(at: [IndexPath(item: 0, section: 1)])
-        }
     }
     
     private func setup() {
@@ -99,7 +100,9 @@ class MenuView: UIViewController {
 }
 
 extension MenuView: MenuInputProtocol {
-    
+    func updateOrders() {
+        self.mainCollectionView.reloadItems(at: [IndexPath(item: 0, section: 1)])
+    }
 }
 
 extension MenuView: UICollectionViewDelegateFlowLayout {
@@ -223,7 +226,9 @@ extension MenuView: UICollectionViewDataSource {
             case 2:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishCell.identifier, for: indexPath) as! DishCell
                 let item = presenter.getDishes()[indexPath.item]
+                
                 cell.setup(dish: item)
+                cell.delegate = self
                 
                 return cell
             default:
@@ -236,5 +241,18 @@ extension MenuView: UICollectionViewDataSource {
             return cell
         }
         return UICollectionViewCell()
+    }
+}
+
+extension MenuView: MenuViewDelegate {
+    func updateCount(action: ActionType) {
+        switch action {
+        case .plus:
+            presenter.plusCountDish()
+        case .minus:
+            presenter.minusCountDish()
+        default:
+            print("updateCount default")
+        }
     }
 }

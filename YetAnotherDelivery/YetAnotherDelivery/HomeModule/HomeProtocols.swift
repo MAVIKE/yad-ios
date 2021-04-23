@@ -7,7 +7,7 @@ protocol HomeInputProtocol: class {
 protocol HomeOutputProtocol: class {
     init(view: HomeInputProtocol,
          networkService: NetworkServiceProtocol,
-         router: RouterModulesProtocol)
+         router: RouterHomeModulesProtocol)
     func didRestaurantTapped()
 }
 

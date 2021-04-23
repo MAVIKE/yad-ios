@@ -4,7 +4,8 @@ import Kingfisher
 class DishCell: UICollectionViewCell {
     static let identifier = "DishCell"
     
-    var dish: Dish!
+    private var dish: Dish!
+    public var delegate: MenuViewDelegate!
     
     let imageView: UIImageView = {
         let iv = UIImageView()
@@ -128,11 +129,19 @@ class DishCell: UICollectionViewCell {
         addSubview(orderButton)
         
         orderButton.setTitle("Заказать", for: .normal)
+        orderButton.addTarget(self, action: #selector(orderButtonTapped(sender:)), for: .touchUpInside)
         
         orderButton.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0).isActive = true
         orderButton.rightAnchor.constraint(equalTo: mainLabel.rightAnchor, constant: -10).isActive = true
         orderButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
         orderButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
+    }
+    
+    @objc
+    func orderButtonTapped(sender: Any) {
+        guard let delegate = self.delegate else { return }
+        
+        delegate.updateCount(action: .plus)
     }
     
     // MARK:- Init

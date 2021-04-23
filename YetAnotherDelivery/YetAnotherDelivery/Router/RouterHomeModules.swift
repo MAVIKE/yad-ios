@@ -1,7 +1,7 @@
 import UIKit
 
-protocol RouterModulesProtocol {
-    init(assembly: AssemblyModulesProtocol,
+protocol RouterHomeModulesProtocol {
+    init(assembly: AssemblyHomeModulesProtocol,
          navigation: UINavigationController)
     func initHomeModule()
     func detailModule()
@@ -10,11 +10,11 @@ protocol RouterModulesProtocol {
     func pop()
 }
 
-class RouterModules: RouterModulesProtocol {
-    let assembly: AssemblyModulesProtocol!
+class RouterHomeModules: RouterHomeModulesProtocol {
+    let assembly: AssemblyHomeModulesProtocol!
     let navigation: UINavigationController!
     
-    required init(assembly: AssemblyModulesProtocol,
+    required init(assembly: AssemblyHomeModulesProtocol,
                   navigation: UINavigationController) {
         self.assembly = assembly
         self.navigation = navigation

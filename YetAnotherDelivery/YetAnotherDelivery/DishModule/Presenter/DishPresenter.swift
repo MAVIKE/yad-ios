@@ -2,10 +2,10 @@ import Foundation
 
 class DishPresenter: DishOutputProtocol {
     let view: DishInputProtocol!
-    let router: RouterModulesProtocol!
+    let router: RouterHomeModulesProtocol!
     let dish: Dish!
     
-    required init(view: DishInputProtocol, dish: Dish, router: RouterModulesProtocol) {
+    required init(view: DishInputProtocol, dish: Dish, router: RouterHomeModulesProtocol) {
         self.view = view
         self.dish = dish
         self.router = router
