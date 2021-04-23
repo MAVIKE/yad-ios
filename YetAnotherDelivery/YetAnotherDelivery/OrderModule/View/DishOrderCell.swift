@@ -1,11 +1,9 @@
 import UIKit
-import Kingfisher
 
-class DishCell: UICollectionViewCell {
-    static let identifier = "DishCell"
+class DishOrderCell: UICollectionViewCell {
+    static let identifier = "DishOrderCell"
     
-    private var dish: Dish!
-    public var delegate: MenuViewDelegate!
+    var dish: Dish!
     
     let imageView: UIImageView = {
         let iv = UIImageView()
@@ -54,7 +52,7 @@ class DishCell: UICollectionViewCell {
     
     public func setup(dish: Dish) {
         self.dish = dish
-            
+        
         setupView()
         setupImageView()
         setupMainLabel()
@@ -139,9 +137,6 @@ class DishCell: UICollectionViewCell {
     
     @objc
     func orderButtonTapped(sender: Any) {
-        guard let delegate = self.delegate else { return }
-        
-        delegate.updateCount(action: .plus)
     }
     
     // MARK:- Init
