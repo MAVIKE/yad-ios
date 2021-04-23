@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let tabBar = UITabBarController()
             tabBar.setViewControllers([menuNavigation, orderNavigation, profile], animated: true)
-            tabBar.selectedViewController = menuNavigation
+            tabBar.selectedViewController = orderNavigation
             window?.rootViewController = tabBar
             window?.makeKeyAndVisible()
 

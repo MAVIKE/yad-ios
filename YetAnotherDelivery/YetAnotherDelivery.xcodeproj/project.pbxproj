@@ -22,6 +22,7 @@
 		77E5E9AA2632DA2E00CB4914 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9A92632DA2E00CB4914 /* OrderPresenter.swift */; };
 		77E5E9AD2632DA3C00CB4914 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9AC2632DA3C00CB4914 /* OrderView.swift */; };
 		77E5E9B72632DC4000CB4914 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9B62632DC4000CB4914 /* UINavigationController.swift */; };
+		77E5E9BE2633087700CB4914 /* DishOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E9BD2633087700CB4914 /* DishOrderCell.swift */; };
 		77E89B332619CCD70039C987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B322619CCD70039C987 /* HomeView.swift */; };
 		77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B352619CCE60039C987 /* HomePresenter.swift */; };
 		77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89B382619CD2A0039C987 /* HomeProtocols.swift */; };
@@ -60,6 +61,7 @@
 		77E5E9A92632DA2E00CB4914 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
 		77E5E9AC2632DA3C00CB4914 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		77E5E9B62632DC4000CB4914 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		77E5E9BD2633087700CB4914 /* DishOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishOrderCell.swift; sourceTree = "<group>"; };
 		77E89B322619CCD70039C987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E89B352619CCE60039C987 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		77E89B382619CD2A0039C987 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				77E5E9AC2632DA3C00CB4914 /* OrderView.swift */,
+				77E5E9BD2633087700CB4914 /* DishOrderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				77E5E9A42632D7D600CB4914 /* AssemblyOrderModules.swift in Sources */,
 				77E89B482619CF2D0039C987 /* RouterHomeModules.swift in Sources */,
 				77E5E9A72632DA2500CB4914 /* OrderProtocols.swift in Sources */,
+				77E5E9BE2633087700CB4914 /* DishOrderCell.swift in Sources */,
 				77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */,
 				77F388F1261A1D8D00975226 /* MenuView.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
