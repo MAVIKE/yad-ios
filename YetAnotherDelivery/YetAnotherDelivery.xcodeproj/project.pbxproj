@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		C59718E82617A11C00BEF029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E72617A11C00BEF029 /* ViewController.swift */; };
 		C59718ED2617A11E00BEF029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59718EC2617A11E00BEF029 /* Assets.xcassets */; };
 		C59718F02617A11E00BEF029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59718EE2617A11E00BEF029 /* LaunchScreen.storyboard */; };
+		C597198D2619C2E500BEF029 /* ProfileScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597198C2619C2E500BEF029 /* ProfileScreenModel.swift */; };
+		C59719912619C2FE00BEF029 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59719902619C2FE00BEF029 /* ProfileScreenViewController.swift */; };
+		C59719942619C30E00BEF029 /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59719932619C30E00BEF029 /* ProfileScreenPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C59718EC2617A11E00BEF029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59718EF2617A11E00BEF029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C59718F12617A11E00BEF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C597198C2619C2E500BEF029 /* ProfileScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenModel.swift; sourceTree = "<group>"; };
+		C59719902619C2FE00BEF029 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		C59719932619C30E00BEF029 /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,6 @@
 				6B4FDC0C0E1A17BFDFB661B9 /* Pods-YetAnotherDelivery.debug.xcconfig */,
 				546B6C7D2C7F29933A14E07B /* Pods-YetAnotherDelivery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,11 +87,22 @@
 				C59718E32617A11C00BEF029 /* AppDelegate.swift */,
 				C59718E52617A11C00BEF029 /* SceneDelegate.swift */,
 				C59718E72617A11C00BEF029 /* ViewController.swift */,
+				C597198B2619C2C300BEF029 /* ProfileScreen */,
 				C59718EC2617A11E00BEF029 /* Assets.xcassets */,
 				C59718EE2617A11E00BEF029 /* LaunchScreen.storyboard */,
 				C59718F12617A11E00BEF029 /* Info.plist */,
 			);
 			path = YetAnotherDelivery;
+			sourceTree = "<group>";
+		};
+		C597198B2619C2C300BEF029 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C597198C2619C2E500BEF029 /* ProfileScreenModel.swift */,
+				C59719902619C2FE00BEF029 /* ProfileScreenViewController.swift */,
+				C59719932619C30E00BEF029 /* ProfileScreenPresenter.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59719942619C30E00BEF029 /* ProfileScreenPresenter.swift in Sources */,
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
+				C597198D2619C2E500BEF029 /* ProfileScreenModel.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
+				C59719912619C2FE00BEF029 /* ProfileScreenViewController.swift in Sources */,
 				C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
