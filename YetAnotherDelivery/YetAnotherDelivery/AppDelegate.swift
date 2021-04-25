@@ -9,7 +9,6 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -50,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let tabBar = UITabBarController()
             tabBar.setViewControllers([menuNavigation, orderNavigation, profile], animated: true)
-            tabBar.selectedViewController = profile
+            tabBar.selectedViewController = orderNavigation
             window?.rootViewController = tabBar
             window?.makeKeyAndVisible()
 

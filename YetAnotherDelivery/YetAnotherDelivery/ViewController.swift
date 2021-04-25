@@ -16,6 +16,43 @@ class ViewController: UIViewController {
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
         }
+        
+        testAlamofire()
+    }
+    
+    func testAlamofire() {
+        let networkService = NetworkService()
+        //        let signUpForm = SignUpForm(email: "antontimonin13@mail.ru", name: "Anton TIMONIN", password: "ImperatorZurg123", phone: "79842674549", address: Address(latitude: 89.89, longitude: 11.11))
+        //        networkService.registrationRequest(form: signUpForm) { (result) in
+        //            switch result {
+        //            case .success(let response):
+        //                print(response)
+        //            case .failure(let error):
+        //                print(error)
+        //            }
+        
+//        let singin = SignInForm(phone: "79772675542", password: "ImperatorZurg123")
+//        networkService.authorizationHandler(form: singin) { (result) in
+//            switch result {
+//            case .success(let signInResponse):
+//                print(signInResponse)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+        
+        networkService.getRestaurantsHandler { (result) in
+            switch result {
+            case .success(let restaurants):
+                restaurants.forEach { (restaurant) in
+                    print("\n")
+                    print(restaurant)
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
     }
 }
 
