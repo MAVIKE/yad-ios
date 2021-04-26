@@ -37,19 +37,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             orderRouter.initOrderModule()
             
             // MARK:- Profile Module
-            let profile = ProfileScreenViewController()
-//            profile.view.backgroundColor = .green
+            let profileNavigation = UINavigationController()
+            let profileAssembly = AssemblyProfileModules()
+            let profileRouter = RouterProfileModules(assembly: profileAssembly, navigation: profileNavigation)
+            let profileModule = profileRouter.initProfileModule()
             if let testDataImg = UIImage(named: "profile")?.pngData() {
                 let testImg =  UIImage(data: testDataImg, scale: 15.25)
                 let testBarItem = UITabBarItem(title: "Профиль", image: testImg, selectedImage: nil)
-                profile.tabBarItem = testBarItem
+                profileModule.tabBarItem = testBarItem
             }
             
             window = UIWindow(frame: UIScreen.main.bounds)
             
             let tabBar = UITabBarController()
-            tabBar.setViewControllers([menuNavigation, orderNavigation, profile], animated: true)
-            tabBar.selectedViewController = orderNavigation
+            tabBar.setViewControllers([menuNavigation, orderNavigation, profileModule], animated: true)
+            tabBar.selectedViewController = profileModule
             window?.rootViewController = tabBar
             window?.makeKeyAndVisible()
 
