@@ -11,6 +11,20 @@
 		77014CAC263371AF0029855F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77014CAB263371AF0029855F /* Location.swift */; };
 		77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */; };
 		77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */; };
+		77776072263595B100DF167F /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77776071263595B100DF167F /* Restaurants.swift */; };
+		77BDC04D263590D6006C0BD8 /* SingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BDC04C263590D6006C0BD8 /* SingUp.swift */; };
+		77BDC05226359430006C0BD8 /* SingIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BDC05126359430006C0BD8 /* SingIn.swift */; };
+		77BDC05726359454006C0BD8 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BDC05626359454006C0BD8 /* URLS.swift */; };
+		77C926DE2636AEFF00E3675F /* SigninRegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926DB2636AEFF00E3675F /* SigninRegisterScreenView.swift */; };
+		77C926DF2636AEFF00E3675F /* SigninRegisterScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926DC2636AEFF00E3675F /* SigninRegisterScreenPresenter.swift */; };
+		77C926E02636AEFF00E3675F /* SigninRegisterScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926DD2636AEFF00E3675F /* SigninRegisterScreenModel.swift */; };
+		77C926F32636AF6300E3675F /* SigninRegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926F22636AF6300E3675F /* SigninRegisterProtocols.swift */; };
+		77C926F62636AFE500E3675F /* RouterProfileModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926F52636AFE500E3675F /* RouterProfileModules.swift */; };
+		77C926F92636B00D00E3675F /* AssemblyProfileModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926F82636B00D00E3675F /* AssemblyProfileModules.swift */; };
+		77C927032636B0CB00E3675F /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C927002636B0CB00E3675F /* ProfileScreenView.swift */; };
+		77C927042636B0CB00E3675F /* ProfileScreenProtcols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926FC2636B0CB00E3675F /* ProfileScreenProtcols.swift */; };
+		77C927052636B0CB00E3675F /* ProfileScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C927022636B0CB00E3675F /* ProfileScreenModel.swift */; };
+		77C927062636B0CB00E3675F /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C926FE2636B0CB00E3675F /* ProfileScreenPresenter.swift */; };
 		77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB036E2630B73300A5F529 /* MenuDish.swift */; };
 		77CB03752630BC1D00A5F529 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB03742630BC1D00A5F529 /* Dish.swift */; };
 		77E5E98A26317C9700CB4914 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E98926317C9700CB4914 /* DishView.swift */; };
@@ -38,12 +52,6 @@
 		77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388F3261A1D9B00975226 /* MenuProtocols.swift */; };
 		77F38903261A232300975226 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38902261A232300975226 /* DishCell.swift */; };
 		77F38906261A586600975226 /* YADLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38905261A586600975226 /* YADLabel.swift */; };
-		C57F06912635E660002346A5 /* SigninRegisterScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06902635E660002346A5 /* SigninRegisterScreenPresenter.swift */; };
-		C57F06952635E674002346A5 /* SigninRegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06942635E674002346A5 /* SigninRegisterScreenView.swift */; };
-		C57F06982635E67E002346A5 /* SigninRegisterScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06972635E67E002346A5 /* SigninRegisterScreenModel.swift */; };
-		C57F067F2635DF54002346A5 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F067E2635DF54002346A5 /* ProfileScreenViewController.swift */; };
-		C57F06832635DF99002346A5 /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06822635DF99002346A5 /* ProfileScreenPresenter.swift */; };
-		C57F06872635DFA5002346A5 /* ProfileScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06862635DFA5002346A5 /* ProfileScreenModel.swift */; };
 		C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E32617A11C00BEF029 /* AppDelegate.swift */; };
 		C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E52617A11C00BEF029 /* SceneDelegate.swift */; };
 		C59718E82617A11C00BEF029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59718E72617A11C00BEF029 /* ViewController.swift */; };
@@ -57,6 +65,20 @@
 		77014CAB263371AF0029855F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		77320E6A262CC48F005AE1E1 /* TypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDishCell.swift; sourceTree = "<group>"; };
 		77320E6D262CC521005AE1E1 /* PrototypeDishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeDishCell.swift; sourceTree = "<group>"; };
+		77776071263595B100DF167F /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		77BDC04C263590D6006C0BD8 /* SingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp.swift; sourceTree = "<group>"; };
+		77BDC05126359430006C0BD8 /* SingIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingIn.swift; sourceTree = "<group>"; };
+		77BDC05626359454006C0BD8 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		77C926DB2636AEFF00E3675F /* SigninRegisterScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenView.swift; sourceTree = "<group>"; };
+		77C926DC2636AEFF00E3675F /* SigninRegisterScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenPresenter.swift; sourceTree = "<group>"; };
+		77C926DD2636AEFF00E3675F /* SigninRegisterScreenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenModel.swift; sourceTree = "<group>"; };
+		77C926F22636AF6300E3675F /* SigninRegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterProtocols.swift; sourceTree = "<group>"; };
+		77C926F52636AFE500E3675F /* RouterProfileModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProfileModules.swift; sourceTree = "<group>"; };
+		77C926F82636B00D00E3675F /* AssemblyProfileModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyProfileModules.swift; sourceTree = "<group>"; };
+		77C926FC2636B0CB00E3675F /* ProfileScreenProtcols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenProtcols.swift; sourceTree = "<group>"; };
+		77C926FE2636B0CB00E3675F /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
+		77C927002636B0CB00E3675F /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
+		77C927022636B0CB00E3675F /* ProfileScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenModel.swift; sourceTree = "<group>"; };
 		77CB036E2630B73300A5F529 /* MenuDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDish.swift; sourceTree = "<group>"; };
 		77CB03742630BC1D00A5F529 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		77E5E98926317C9700CB4914 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
@@ -85,12 +107,6 @@
 		77F38902261A232300975226 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
 		77F38905261A586600975226 /* YADLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YADLabel.swift; sourceTree = "<group>"; };
 		B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetAnotherDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C57F06902635E660002346A5 /* SigninRegisterScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenPresenter.swift; sourceTree = "<group>"; };
-		C57F06942635E674002346A5 /* SigninRegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenView.swift; sourceTree = "<group>"; };
-		C57F06972635E67E002346A5 /* SigninRegisterScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenModel.swift; sourceTree = "<group>"; };
-		C57F067E2635DF54002346A5 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
-		C57F06822635DF99002346A5 /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
-		C57F06862635DFA5002346A5 /* ProfileScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenModel.swift; sourceTree = "<group>"; };
 		C59718E02617A11C00BEF029 /* YetAnotherDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59718E32617A11C00BEF029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C59718E52617A11C00BEF029 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +143,97 @@
 				B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77BDC04F26359424006C0BD8 /* Api Forms */ = {
+			isa = PBXGroup;
+			children = (
+				77BDC04C263590D6006C0BD8 /* SingUp.swift */,
+				77BDC05126359430006C0BD8 /* SingIn.swift */,
+				77776071263595B100DF167F /* Restaurants.swift */,
+			);
+			path = "Api Forms";
+			sourceTree = "<group>";
+		};
+		77BDC05426359446006C0BD8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				77BDC04F26359424006C0BD8 /* Api Forms */,
+				77BDC05626359454006C0BD8 /* URLS.swift */,
+				77E89B422619CEF30039C987 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		77C926DA2636AEFF00E3675F /* SigninRegister */ = {
+			isa = PBXGroup;
+			children = (
+				77C926EF2636AF4A00E3675F /* Model */,
+				77C926EB2636AF4200E3675F /* View */,
+				77C926ED2636AF4500E3675F /* Presenter */,
+				77C926F22636AF6300E3675F /* SigninRegisterProtocols.swift */,
+			);
+			path = SigninRegister;
+			sourceTree = "<group>";
+		};
+		77C926EB2636AF4200E3675F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77C926DB2636AEFF00E3675F /* SigninRegisterScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77C926ED2636AF4500E3675F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77C926DC2636AEFF00E3675F /* SigninRegisterScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		77C926EF2636AF4A00E3675F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77C926DD2636AEFF00E3675F /* SigninRegisterScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77C926FB2636B0CB00E3675F /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				77C927012636B0CB00E3675F /* Model */,
+				77C926FF2636B0CB00E3675F /* View */,
+				77C926FD2636B0CB00E3675F /* Presenter */,
+				77C926FC2636B0CB00E3675F /* ProfileScreenProtcols.swift */,
+			);
+			name = ProfileScreen;
+			path = OrderModule/ProfileScreen;
+			sourceTree = "<group>";
+		};
+		77C926FD2636B0CB00E3675F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77C926FE2636B0CB00E3675F /* ProfileScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		77C926FF2636B0CB00E3675F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77C927002636B0CB00E3675F /* ProfileScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77C927012636B0CB00E3675F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77C927022636B0CB00E3675F /* ProfileScreenModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77CB03712630B73700A5F529 /* Model */ = {
@@ -196,6 +303,7 @@
 			children = (
 				77E89B3B2619CDE30039C987 /* AssemblyHomeModules.swift */,
 				77E5E9A32632D7D600CB4914 /* AssemblyOrderModules.swift */,
+				77C926F82636B00D00E3675F /* AssemblyProfileModules.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -213,7 +321,7 @@
 		77E89B452619CEF60039C987 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				77E89B422619CEF30039C987 /* NetworkService.swift */,
+				77BDC05426359446006C0BD8 /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -223,6 +331,7 @@
 			children = (
 				77E89B472619CF2D0039C987 /* RouterHomeModules.swift */,
 				77E5E99F2632D78000CB4914 /* RouterOrderModules.swift */,
+				77C926F52636AFE500E3675F /* RouterProfileModules.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -286,24 +395,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		C57F068F2635E637002346A5 /* SigninRegistr */ = {
-			isa = PBXGroup;
-			children = (
-				C57F06902635E660002346A5 /* SigninRegisterScreenPresenter.swift */,
-				C57F06942635E674002346A5 /* SigninRegisterScreenView.swift */,
-				C57F06972635E67E002346A5 /* SigninRegisterScreenModel.swift */,
-			);
-			path = SigninRegistr;
-		C57F06812635DF68002346A5 /* ProfileScreen */ = {
-			isa = PBXGroup;
-			children = (
-				C57F067E2635DF54002346A5 /* ProfileScreenViewController.swift */,
-				C57F06862635DFA5002346A5 /* ProfileScreenModel.swift */,
-				C57F06822635DF99002346A5 /* ProfileScreenPresenter.swift */,
-			);
-			path = ProfileScreen;
-			sourceTree = "<group>";
-		};
 		C59718D72617A11C00BEF029 = {
 			isa = PBXGroup;
 			children = (
@@ -337,8 +428,8 @@
 				77F388F6261A1DA000975226 /* MenuModule */,
 				77E5E99426317CB900CB4914 /* DishModule */,
 				77E5E9AF2632DA4000CB4914 /* OrderModule */,
-				C57F068F2635E637002346A5 /* SigninRegistr */,
-				C57F06812635DF68002346A5 /* ProfileScreen */,
+				77C926FB2636B0CB00E3675F /* ProfileScreen */,
+				77C926DA2636AEFF00E3675F /* SigninRegister */,
 				C59718EC2617A11E00BEF029 /* Assets.xcassets */,
 				C59718EE2617A11E00BEF029 /* LaunchScreen.storyboard */,
 				C59718F12617A11E00BEF029 /* Info.plist */,
@@ -459,13 +550,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57F06872635DFA5002346A5 /* ProfileScreenModel.swift in Sources */,
 				77F38903261A232300975226 /* DishCell.swift in Sources */,
-				C57F06912635E660002346A5 /* SigninRegisterScreenPresenter.swift in Sources */,
 				77014CAC263371AF0029855F /* Location.swift in Sources */,
+				77C927062636B0CB00E3675F /* ProfileScreenPresenter.swift in Sources */,
 				77E5E98E26317CA500CB4914 /* DishPresenter.swift in Sources */,
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
+				77C927042636B0CB00E3675F /* ProfileScreenProtcols.swift in Sources */,
+				77BDC05226359430006C0BD8 /* SingIn.swift in Sources */,
 				77E5E9A02632D78000CB4914 /* RouterOrderModules.swift in Sources */,
+				77BDC04D263590D6006C0BD8 /* SingUp.swift in Sources */,
+				77C926F62636AFE500E3675F /* RouterProfileModules.swift in Sources */,
 				77E5E99126317CB200CB4914 /* DishProtocols.swift in Sources */,
 				77E89B682619E4330039C987 /* HeaderCell.swift in Sources */,
 				77E89B3C2619CDE30039C987 /* AssemblyHomeModules.swift in Sources */,
@@ -475,29 +569,34 @@
 				77E89B6B2619F2EA0039C987 /* YADView.swift in Sources */,
 				77E89B332619CCD70039C987 /* HomeView.swift in Sources */,
 				77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */,
-				C57F06832635DF99002346A5 /* ProfileScreenPresenter.swift in Sources */,
+				77C927032636B0CB00E3675F /* ProfileScreenView.swift in Sources */,
 				77CB03752630BC1D00A5F529 /* Dish.swift in Sources */,
 				77E5E99C263204D100CB4914 /* OrderCell.swift in Sources */,
+				77C926E02636AEFF00E3675F /* SigninRegisterScreenModel.swift in Sources */,
 				77E5E9A42632D7D600CB4914 /* AssemblyOrderModules.swift in Sources */,
+				77BDC05726359454006C0BD8 /* URLS.swift in Sources */,
 				77E89B482619CF2D0039C987 /* RouterHomeModules.swift in Sources */,
 				77E5E9A72632DA2500CB4914 /* OrderProtocols.swift in Sources */,
+				77C926DF2636AEFF00E3675F /* SigninRegisterScreenPresenter.swift in Sources */,
 				77E5E9BE2633087700CB4914 /* DishOrderCell.swift in Sources */,
 				77CB036F2630B73300A5F529 /* MenuDish.swift in Sources */,
 				77F388F1261A1D8D00975226 /* MenuView.swift in Sources */,
-				C57F067F2635DF54002346A5 /* ProfileScreenViewController.swift in Sources */,
 				C59718E42617A11C00BEF029 /* AppDelegate.swift in Sources */,
+				77C926DE2636AEFF00E3675F /* SigninRegisterScreenView.swift in Sources */,
 				77E5E9AA2632DA2E00CB4914 /* OrderPresenter.swift in Sources */,
 				77E5E98A26317C9700CB4914 /* DishView.swift in Sources */,
 				77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */,
 				77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */,
-				C57F06982635E67E002346A5 /* SigninRegisterScreenModel.swift in Sources */,
 				77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */,
 				77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */,
 				77F388EE261A1D7E00975226 /* MenuPresenter.swift in Sources */,
+				77C927052636B0CB00E3675F /* ProfileScreenModel.swift in Sources */,
 				77E5E9B72632DC4000CB4914 /* UINavigationController.swift in Sources */,
-				C57F06952635E674002346A5 /* SigninRegisterScreenView.swift in Sources */,
+				77C926F92636B00D00E3675F /* AssemblyProfileModules.swift in Sources */,
 				C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */,
 				77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */,
+				77C926F32636AF6300E3675F /* SigninRegisterProtocols.swift in Sources */,
+				77776072263595B100DF167F /* Restaurants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
