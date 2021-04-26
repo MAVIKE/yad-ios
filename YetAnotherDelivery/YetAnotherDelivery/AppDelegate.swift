@@ -37,8 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             orderRouter.initOrderModule()
             
             // MARK:- Profile Module
-            let profile = ViewController()
-            profile.view.backgroundColor = .green
+            let profile = ProfileScreenViewController()
+//            profile.view.backgroundColor = .green
             if let testDataImg = UIImage(named: "profile")?.pngData() {
                 let testImg =  UIImage(data: testDataImg, scale: 15.25)
                 let testBarItem = UITabBarItem(title: "Профиль", image: testImg, selectedImage: nil)
