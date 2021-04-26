@@ -38,6 +38,9 @@
 		77F388F4261A1D9B00975226 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F388F3261A1D9B00975226 /* MenuProtocols.swift */; };
 		77F38903261A232300975226 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38902261A232300975226 /* DishCell.swift */; };
 		77F38906261A586600975226 /* YADLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F38905261A586600975226 /* YADLabel.swift */; };
+		C57F06912635E660002346A5 /* SigninRegisterScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06902635E660002346A5 /* SigninRegisterScreenPresenter.swift */; };
+		C57F06952635E674002346A5 /* SigninRegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06942635E674002346A5 /* SigninRegisterScreenView.swift */; };
+		C57F06982635E67E002346A5 /* SigninRegisterScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06972635E67E002346A5 /* SigninRegisterScreenModel.swift */; };
 		C57F067F2635DF54002346A5 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F067E2635DF54002346A5 /* ProfileScreenViewController.swift */; };
 		C57F06832635DF99002346A5 /* ProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06822635DF99002346A5 /* ProfileScreenPresenter.swift */; };
 		C57F06872635DFA5002346A5 /* ProfileScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F06862635DFA5002346A5 /* ProfileScreenModel.swift */; };
@@ -82,6 +85,9 @@
 		77F38902261A232300975226 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
 		77F38905261A586600975226 /* YADLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YADLabel.swift; sourceTree = "<group>"; };
 		B4BDF7EB6287D5FBCEBF1144 /* Pods_YetAnotherDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetAnotherDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57F06902635E660002346A5 /* SigninRegisterScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenPresenter.swift; sourceTree = "<group>"; };
+		C57F06942635E674002346A5 /* SigninRegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenView.swift; sourceTree = "<group>"; };
+		C57F06972635E67E002346A5 /* SigninRegisterScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegisterScreenModel.swift; sourceTree = "<group>"; };
 		C57F067E2635DF54002346A5 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 		C57F06822635DF99002346A5 /* ProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenPresenter.swift; sourceTree = "<group>"; };
 		C57F06862635DFA5002346A5 /* ProfileScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenModel.swift; sourceTree = "<group>"; };
@@ -280,6 +286,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		C57F068F2635E637002346A5 /* SigninRegistr */ = {
+			isa = PBXGroup;
+			children = (
+				C57F06902635E660002346A5 /* SigninRegisterScreenPresenter.swift */,
+				C57F06942635E674002346A5 /* SigninRegisterScreenView.swift */,
+				C57F06972635E67E002346A5 /* SigninRegisterScreenModel.swift */,
+			);
+			path = SigninRegistr;
 		C57F06812635DF68002346A5 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +337,7 @@
 				77F388F6261A1DA000975226 /* MenuModule */,
 				77E5E99426317CB900CB4914 /* DishModule */,
 				77E5E9AF2632DA4000CB4914 /* OrderModule */,
+				C57F068F2635E637002346A5 /* SigninRegistr */,
 				C57F06812635DF68002346A5 /* ProfileScreen */,
 				C59718EC2617A11E00BEF029 /* Assets.xcassets */,
 				C59718EE2617A11E00BEF029 /* LaunchScreen.storyboard */,
@@ -446,6 +461,7 @@
 			files = (
 				C57F06872635DFA5002346A5 /* ProfileScreenModel.swift in Sources */,
 				77F38903261A232300975226 /* DishCell.swift in Sources */,
+				C57F06912635E660002346A5 /* SigninRegisterScreenPresenter.swift in Sources */,
 				77014CAC263371AF0029855F /* Location.swift in Sources */,
 				77E5E98E26317CA500CB4914 /* DishPresenter.swift in Sources */,
 				C59718E82617A11C00BEF029 /* ViewController.swift in Sources */,
@@ -474,10 +490,12 @@
 				77E5E98A26317C9700CB4914 /* DishView.swift in Sources */,
 				77E89B362619CCE60039C987 /* HomePresenter.swift in Sources */,
 				77E89B652619D5690039C987 /* MenuSelectionCell.swift in Sources */,
+				C57F06982635E67E002346A5 /* SigninRegisterScreenModel.swift in Sources */,
 				77320E6E262CC521005AE1E1 /* PrototypeDishCell.swift in Sources */,
 				77E89B392619CD2A0039C987 /* HomeProtocols.swift in Sources */,
 				77F388EE261A1D7E00975226 /* MenuPresenter.swift in Sources */,
 				77E5E9B72632DC4000CB4914 /* UINavigationController.swift in Sources */,
+				C57F06952635E674002346A5 /* SigninRegisterScreenView.swift in Sources */,
 				C59718E62617A11C00BEF029 /* SceneDelegate.swift in Sources */,
 				77320E6B262CC48F005AE1E1 /* TypeDishCell.swift in Sources */,
 			);
